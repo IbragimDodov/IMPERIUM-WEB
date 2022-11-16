@@ -1,0 +1,113 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  border: none;
+  box-sizing: border-box;
+}
+
+ul,
+ul li {
+  list-style: none;
+}
+
+a,
+button {
+  font-family: "Raleway", sans-serif;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
+
+  &:hover {
+    color: #076795;
+  }
+}
+
+img,
+svg {
+  max-width: 100%;
+  height: auto;
+}
+
+body {
+  color: #7d7d7d;
+  background-color: #131111;
+  // font-family: 'Inter', sans-serif;
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.container {
+  max-width: 1218px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.burger-menu-btn {
+  display: none;
+  width: 50px;
+  position: absolute;
+  top: 20px;
+  right: 25px;
+}
+
+.tool {
+  &-1,
+  &-2,
+  &-3 {
+    background: #bcbcbc;
+    content: "";
+    display: block;
+    height: 6px;
+    border-radius: 3px;
+    margin: 7px 0;
+    transition: 0.5s;
+  }
+}
+
+.mobile-menu__nav {
+  display: none;
+  padding-top: 80px;
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    row-gap: 30px;
+
+    li {
+      width: 100%;
+
+      a {
+        font-weight: bold;
+        font-size: 24px;
+      }
+    }
+  }
+}
+
+@import "header.scss";
+
+// @media (max-width: 1024px) {
+// }
+
+// @media (max-width: 992px) {
+// }
+
+// @media (max-width: 768px) {
+// }
+
+// @media (max-width: 576px) {
+// }
+
+// @media (max-width: 425px) {
+// }
+
+// @media (max-width: 375px) {
+// }
+
+// @media (max-width: 320px) {
+// }
